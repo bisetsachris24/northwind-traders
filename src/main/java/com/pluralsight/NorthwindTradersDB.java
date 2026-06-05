@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class NortwindTradersDB {
+public class NorthwindTradersDB {
     public static void main(String[] args) {
 
         BasicDataSource dataSource = new BasicDataSource();
