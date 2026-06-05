@@ -18,7 +18,9 @@ public class NorthwindTradersDB {
 
         String sql = """
                 SELECT
-                   *
+                   Productname,
+                   productid
+              
                 FROM
                     Products
                 """;
@@ -29,9 +31,12 @@ public class NorthwindTradersDB {
                 ResultSet results = stmt.executeQuery();
         ) {
             while (results.next()) {
-              String productname = results.getString("productname");
+                int productId = results.getInt("ProductId");
+                String productName = results.getString("ProductName");
 
-                System.out.println(productname);
+                System.out.printf("%d - %s%n", productId, productName);
+
+
             }
 
         } catch (SQLException e) {
