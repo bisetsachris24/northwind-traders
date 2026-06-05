@@ -34,7 +34,7 @@ public class NorthwindTradersDB {
                 int productId = results.getInt("ProductId");
                 String productName = results.getString("ProductName");
 
-                System.out.printf("%d - %s%n", productId, productName);
+                System.out.println ( productId + "-" + productName);
 
 
             }
